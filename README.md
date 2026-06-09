@@ -67,6 +67,12 @@ No Python or Node needed on the host — each app's container has it.
 | 2 | `labs/LAB2-pantry-agentic.md` | `agents-and-skills/` | Rebuild it with **agents + skills**. Same app, less typing. |
 | 3 | `labs/RAPID-game.md` | `agents-and-skills/` | *Bangkatan Rooftop Run* — a one-screen Brunei web game (frontend-led). |
 | 4 | `labs/RAPID-makan-vote.md` | `agents-and-skills/` | *Makan Mana* — a group-vote app (security is the star). |
+| ★ | `labs/BONUS-makan-vote-auth.md` | `agents-and-skills/` | **Bonus:** add accounts + multi-user (ownership, per-user voting) to Makan Mana. |
+| ★ | `labs/BONUS-game-auth.md` | `agents-and-skills/` | **Bonus:** add accounts + a shared multi-user leaderboard to the game. |
+
+> The two **★ bonus labs** are upgrades — do them after their base lab (3 / 4). They add
+> authentication and multi-user, the workshop's richest security surface, reusing the same
+> agents and skills.
 
 ---
 
