@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mockup — [App name]</title>
+  <!-- Tailwind via CDN: no build step. Fine for mockups and small workshop apps. -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!--
+    PLACEHOLDER NOTES (delete before handing over):
+    - All data below is fake/placeholder.
+    - No JS behaviour wired — this is for visual sign-off only.
+    - Accent colour: indigo. Neutral: slate (tinted, not pure black/white).
+    - Screens shown: list, empty, add-form, validation-error, result.
+  -->
+</head>
+<body class="bg-slate-50 text-slate-800">
+  <div class="max-w-2xl mx-auto px-4 py-8 space-y-12">
+
+    <header class="space-y-1">
+      <h1 class="text-2xl font-bold tracking-tight">[App name]</h1>
+      <p class="text-slate-500">[One-line description from the PRD summary.]</p>
+    </header>
+
+    <!-- ───────────── Screen: List (with data) ───────────── -->
+    <section class="space-y-3">
+      <p class="text-xs font-semibold uppercase tracking-wide text-indigo-600">— List (with data) —</p>
+      <div class="flex items-center justify-between">
+        <h2 class="text-lg font-semibold">Your items</h2>
+        <button class="bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg px-4 py-2 focus:ring-2 focus:ring-indigo-400 focus:outline-none">Add item</button>
+      </div>
+      <ul class="divide-y divide-slate-200 bg-white border border-slate-200 rounded-xl">
+        <li class="flex items-center justify-between p-4">
+          <span><span class="font-medium">Tofu</span> · qty 2</span>
+          <span class="text-red-600 text-sm font-medium">Expires in 2 days</span>
+        </li>
+        <li class="flex items-center justify-between p-4">
+          <span><span class="font-medium">Rice</span> · qty 1</span>
+          <span class="text-slate-500 text-sm">Expires in 21 days</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ───────────── Screen: Empty state ───────────── -->
+    <section class="space-y-3">
+      <p class="text-xs font-semibold uppercase tracking-wide text-indigo-600">— Empty state —</p>
+      <div class="bg-white border border-dashed border-slate-300 rounded-xl p-8 text-center space-y-2">
+        <p class="font-medium">Nothing here yet</p>
+        <p class="text-slate-500 text-sm">Add your first item to start tracking expiries.</p>
+        <button class="bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg px-4 py-2 mt-2 focus:ring-2 focus:ring-indigo-400 focus:outline-none">Add your first item</button>
+      </div>
+    </section>
+
+    <!-- ───────────── Screen: Add form ───────────── -->
+    <section class="space-y-3">
+      <p class="text-xs font-semibold uppercase tracking-wide text-indigo-600">— Add form —</p>
+      <form class="bg-white border border-slate-200 rounded-xl p-5 space-y-4">
+        <div class="space-y-1">
+          <label for="name" class="block text-sm font-medium">Name</label>
+          <input id="name" type="text" class="w-full border border-slate-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-indigo-400 focus:outline-none" placeholder="e.g. Tofu" />
+        </div>
+        <div class="space-y-1">
+          <label for="qty" class="block text-sm font-medium">Quantity</label>
+          <input id="qty" type="number" min="1" class="w-full border border-slate-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-indigo-400 focus:outline-none" placeholder="1" />
+        </div>
+        <div class="space-y-1">
+          <label for="expiry" class="block text-sm font-medium">Expiry date</label>
+          <input id="expiry" type="date" class="w-full border border-slate-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-indigo-400 focus:outline-none" />
+        </div>
+        <div class="flex gap-2">
+          <button class="bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg px-4 py-2 focus:ring-2 focus:ring-indigo-400 focus:outline-none">Save</button>
+          <button class="border border-slate-300 hover:bg-slate-100 rounded-lg px-4 py-2">Cancel</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- ───────────── Screen: Validation error ───────────── -->
+    <section class="space-y-3">
+      <p class="text-xs font-semibold uppercase tracking-wide text-indigo-600">— Validation error —</p>
+      <form class="bg-white border border-slate-200 rounded-xl p-5 space-y-4">
+        <div class="space-y-1">
+          <label for="name-err" class="block text-sm font-medium">Name</label>
+          <input id="name-err" type="text" aria-invalid="true" class="w-full border border-red-400 rounded-lg px-3 py-2 focus:ring-2 focus:ring-red-400 focus:outline-none" />
+          <p class="text-red-600 text-sm">⚠ Name is required (1–80 characters).</p>
+        </div>
+      </form>
+    </section>
+
+    <!-- ───────────── Screen: Result / success ───────────── -->
+    <section class="space-y-3">
+      <p class="text-xs font-semibold uppercase tracking-wide text-indigo-600">— Result / success —</p>
+      <div class="bg-green-50 border border-green-200 text-green-800 rounded-xl p-4">
+        ✓ Item saved. It now appears in your list.
+      </div>
+    </section>
+
+  </div>
+</body>
+</html>

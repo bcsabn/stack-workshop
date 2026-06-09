@@ -1,0 +1,25 @@
+# Secrets
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Databases
+*.sqlite
+*.sqlite3
+*.db
+
+# Per-project virtualenvs (projects live under each workspace folder)
+**/projects/*/venv
+**/projects/*/.venv
+
+# OS / editor cruft
+.DS_Store
+.vscode/
+.idea/
+
+# Internal: slide-structure doc, not for the public repo
+updated-workshop-structure.md
